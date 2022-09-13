@@ -1,15 +1,14 @@
-#include "stdio.h"
-
+#include "stido.h"
 /**
- * print_alphabet - prints alphabet
- * Return: always (0);
+ * print_alphabet - a function that prints the alphabet, in lowercase
+ * Return: Always (0)
  */
 void print_alphabet(void)
 {
-	int i;
-	for (i = 'a'; i <= 'z'; i++)
+	int n;
+	for (n = 'a'; n <= 'z'; n++)
 	{
-		putchar(i);
+		_putchar(n);
 	}
-	putchar('\n');
+	_putchar('\n');
 }
