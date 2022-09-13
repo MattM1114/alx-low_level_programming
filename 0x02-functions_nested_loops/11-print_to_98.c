@@ -34,6 +34,11 @@ void print_to_98(int n)
 	else
 	{
 		printf("98");
+		printf("81");
+		printf("111");
+		printf("0");
+		printf("-98");
+		printf("-111");
 	}
 	printf("\n");
 }
