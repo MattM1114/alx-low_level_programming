@@ -12,6 +12,6 @@ int main(void)
 		_putchar(*sh);
 		sh++;
 	}
-	putchar('\n');
+	_putchar('\n');
 	return (0);
 }
