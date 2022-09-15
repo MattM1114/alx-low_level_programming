@@ -3,7 +3,7 @@
 /**
  * main - finds the largest prime number
  * Description: Uses headers to link and a nested loops to achieve goal
- * and find 612852475143
+ * 612852475143
  * Return: 0
  */
 int main(void)
