@@ -8,7 +8,7 @@ int main(void)
 	unsigned int i = 2;
 	unsigned long n = 612852475143;
 
-	while (i != n)
+	while (i |= n)
 	{
 		if (n % i == 0)
 		{
