@@ -11,11 +11,11 @@ int main(void)
 	unsigned long big = 0;
 	unsigned long numb = 612852475143;
 
-	while (numb > i)
+	while(numb > i)
 	{
-		while (numb % i == 0)
+		while(numb % i == 0)
 		{
-			if (i > big)
+			if(i > big)
 				big = i;
 			numb = numb / i;
 		}
