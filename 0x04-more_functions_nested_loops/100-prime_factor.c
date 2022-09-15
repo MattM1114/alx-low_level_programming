@@ -3,24 +3,21 @@
 /**
  * main - finds the largest prime
  * Description:Uses headers to link and a nested loop to achieve goal
- * Return: 0 if no errors 
+ * 612852475143
+ * Return: 0 
  */
 int main(void)
 {
-	unsigned long i = 2;
-	unsigned long big = 0;
-	unsigned long numb = 612852475143;
+	int i;
+	long numb = 612852475143;
 
-	while(numb > i)
+	for ( i = (int) sqrt(numb); i > 2; i++)
 	{
-		while(numb % i == 0)
+		if (numb % i == 0)
 		{
-			if(i > big)
-				big = i;
-			numb = numb / i;
+			printf("%d\n", i);
+			break;
 		}
-		i++;
 	}
-	printf("%lu\n", big);
 	return (0);
 }
