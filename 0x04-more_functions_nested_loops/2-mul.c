@@ -1,6 +1,6 @@
-#include "main.h"
+#include"main.h"
 /**
- * mul - checks for checks for a digit (0 - 9).
+ * mul - checks for checks for a digit (0 though 9).
  * @a ; a - variable
  * @b ; b - variable
  * Return: Always 0.
