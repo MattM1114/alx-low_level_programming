@@ -2,7 +2,6 @@
 #include <math.h>
 /**
  * main - main function
- * 
  * Return: returns 0
  */
 
