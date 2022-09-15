@@ -10,19 +10,20 @@ int main(void)
 {
 	unsigned long i = 2;
 	unsigned long b = 0;
-	unsigned long n = 612852475143
+	unsigned long n = 612852475143;
 
 	while (n > i)
-		{
+	{
 		while (n % i == 0)
 		{
 			if (i > b)
 			{
 				b = i;
 			}
-			i++;
+			n = n / i;
 		}
-		printf("%lu\n", b);
-		return (0);
-		}
+		i++;
+	}
+	printf("%lu\n", b);
+	return(0);
 }
