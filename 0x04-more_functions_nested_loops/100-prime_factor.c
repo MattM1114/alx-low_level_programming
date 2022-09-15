@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <math.h>
-
 /**
  * main - finds the largest prime
  * Description:Uses headers to link and a nested loop to achieve goal
@@ -22,7 +21,6 @@ int main(void)
 		}
 		i++;
 	}
-	printf("%lu\n", biggest);
+	printf("%lu\n", big);
 	return (0);
 }
-
