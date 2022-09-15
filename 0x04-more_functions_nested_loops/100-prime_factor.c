@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include <math.h>
+#include<stdio.h>
+#include<math.h>
 /**
  * main - finds the largest prime
  * Description:Uses headers to link and a nested loop to achieve goal
