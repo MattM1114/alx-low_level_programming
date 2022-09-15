@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <math.h>
 /**
- * main - finds the largest prime number
- * Description: Uses headers to link and a nested loops to achieve goal
+ * main - main block
+ * Description: Find the largest prime factor of the number 612852475143
  * Return: Always (0)
  */
 int main(void)
