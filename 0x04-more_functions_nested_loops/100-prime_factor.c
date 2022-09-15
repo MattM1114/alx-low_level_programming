@@ -25,5 +25,5 @@ int main(void)
 		i++;
 	}
 	printf("%lu\n", b);
-	return(0);
+	return (0);
 }
