@@ -1,9 +1,13 @@
 #include <stdio.h>
 #include <math.h>
+
 /**
- * main - finds and prints the largest prime factor of the number 612852475143, followed by a new line.
- * Return: Always (0)
+ * main - main block
+ * Description: Find and print the largest prime factor of the number
+ * 612852475143
+ * Return: 0
  */
+
 int main(void)
 {
 	unsigned long i = 2;
