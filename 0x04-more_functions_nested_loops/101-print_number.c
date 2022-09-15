@@ -2,17 +2,19 @@
 /**
  * print_number - prints number
  *
- * @n: integger to print to character
+ * @n: integer to print to character
  */
 void print_number(int n)
 {
 	long a;
 	int c;
-	long n;
+	long num;
 
-	if (n < 0)
+	num = n;
+
+	if (num < 0)
 	{
-		n *= -1;
+		num *= -1;
 		_putchar('-');
 	}
 	
@@ -20,21 +22,21 @@ void print_number(int n)
 	c = 1;
 	while (c)
 	{
-		if (n / (b * 10) > 0)
+		if (num / (b * 10) > 0)
 			b *= 10;
 		else
 			c = 0;
 	}
-	while (n >= 0)
+	while (num >= 0)
 	{
 		if (b == 1)
 		{
-			_putchar(n % 10 + '0');
-			n = -1;
+			_putchar(num % 10 + '0');
+			num = -1;
 		}
 		else
 		{
-			_putchar((n / b % 10) + '0');
+			_putchar((num / b % 10) + '0');
 			m /= 10;
 		}
 	}
