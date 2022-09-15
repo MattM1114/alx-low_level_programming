@@ -12,18 +12,18 @@ int main(void)
 	unsigned long b = 0;
 	unsigned long n = 612852475143
 
-	while (n > i)
+	while(n > i)
 		{
 		while(n % i == 0)
 		{
-			if (i > b)
+			if(i > b)
 			{
 				b = i;
 			}
 			i++;
 		}
 		printf("%lu\n", b);
-		return(0);
+		return (0);
 		}
 
 }
