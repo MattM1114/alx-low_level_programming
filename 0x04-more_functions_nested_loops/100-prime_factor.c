@@ -1,27 +1,24 @@
 #include <stdio.h>
-#include <math.h>
 /**
  * main - main function
  * Return: returns 0
  */
 int main(void)
 {
-	unsigned long i = 2;
-	unsigned long b = 0;
+	unsigned int i = 2;
 	unsigned long n = 612852475143;
 
-	while (n > i)
+	while (i != n)
 	{
-		while (n % i == 0)
+		if (n % i == 0)
 		{
-			if (i > b)
-			{
-				b = i;
-			}
 			n = n / i;
 		}
-		i++;
-	}
-	printf("%lu\n", b);
+		else
+		{
+			i++;
+		}
+	printf("5lu\n", n);
 	return (0);
+	}
 }
