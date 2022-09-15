@@ -1,23 +1,29 @@
-#include<stdio.h>
-#include<math.h>
+#include <stdio.h>
+#include <math.h>
 /**
- * main - finds the largest prime
- * Description:Uses headers to link and a nested loop to achieve goal
- * 612852475143
- * Return: 0 
+ * main - finds the largest prime number
+ * Description: Uses headers to link and a nested loops to achieve goal
+ * and find 612852475143
+ * Return: 0
  */
 int main(void)
 {
-	int i;
-	long numb = 612852475143;
+	unsigned long i = 2;
+	unsigned long b = 0;
+	unsigned long n = 612852475143
 
-	for ( i = (int) sqrt(numb); i > 2; i++)
-	{
-		if (numb % i == 0)
+	while (n > i)
 		{
-			printf("%d\n", i);
-			break;
+		while(n % i == 0)
+		{
+			if (i > b)
+			{
+				b = i;
+			}
+			i++;
 		}
-	}
-	return(0);
+		printf("%lu\n", b);
+		return(0);
+		}
+
 }
