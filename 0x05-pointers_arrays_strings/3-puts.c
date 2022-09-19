@@ -5,14 +5,14 @@
  *
  * Return; the length of a string
  */
-void _puts (char *str)
+void _puts(char *str)
 {
-	int m = 0;
+	int i = 0;
 
-	while (*(str + m))
+	while (*(str + i))
 	{
-		_putchar(*(str + m));
-		m++;
+		_putchar(*(str + i));
+		i++;
 	}
 	_putchar('\n');
 }
