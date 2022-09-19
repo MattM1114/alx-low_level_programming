@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * print_rev - prints a string in stdout in reverse
  * @s: string to print 
@@ -20,4 +19,3 @@ void print_rev(char *s)
 	}
 	_putchar('\n');
 }
-
