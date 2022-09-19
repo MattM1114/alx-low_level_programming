@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * _puts - prints a string
- * @str: the string
+ * _puts - prints a string and a new line
+ * @str: pointer to a string to print
  *
  * Return; the length of a string
  */
@@ -10,9 +10,9 @@ void _puts(char *str)
 
 	while (*str != '\0')
 	{
-		_putchar(*str);
+		putc(*str);
 		str++;
 	}
-	_putchar('\n');
+	putc('\n');
 }
 
