@@ -17,9 +17,9 @@ char *leet(char *s)
 
 		while (b < 1)
 		{
-			if (s[a] == [b] || s[a] - 32 == d[b])
+			if (s[a] == e[b] || s[a] - 32 == d[b])
 			{
-				s[a] = n[b];
+				s[a] = e[b];
 			}
 			b++;
 		}
