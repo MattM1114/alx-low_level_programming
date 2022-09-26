@@ -7,7 +7,7 @@
 *@s:string targeted
 *@c:character targeted
 *
-*Return: returns pointer to first occcurence of c
+*Return: returns pointer to first occurrence of c
 */
 char *_strchr(char *s, char c)
 {
