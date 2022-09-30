@@ -1,11 +1,12 @@
 #include <stido.h>
 #include "main.h"
 /**
- * main - Entry Point
- * @argc: arguments
- * @argv: array pointing to arguments
+ * main - Prints the number of arguments passed into main
+ * @argc: Number of command line arguments
+ * @argv: Array name
  * Return: 0
  */
+
 int main(int argc, char *argv[])
 {
 	int i;
