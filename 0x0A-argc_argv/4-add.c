@@ -1,29 +1,32 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
-/**
- * main - Entry Point
- * @argc: arguments
- * @argv: array pointing to arguments
- * Return: 0
+/** 
+ * main - adds positive numbers
+ * @argc: argument count
+ * @argv: argument vector for values
+ *
+ * Return: Always 0 (Success)
  */
 int main(int argc, char *argv[])
 {
-	int i, sum = 0;
+	int i, j, sum;
 
-	if (argc < i)
-		return (0);
-	for (i = 1; i < argc; i++)
+	sum = 0;
+
+	for (i = 1; i < argc ; i++)
 	{
-		if (!atol(argv[i]))
+		for (j = 0; argv[i][j] != '\0' ; j++)
 		{
-			printf("%s\n", "Error");
-			return (1);
+			if (argv[i][j] < 47 || argv[i][j] > 57)
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
-		sum += atoi(argv[i]);
+		sum = sum + atoi(argv[i]);
 	}
 	printf("%d\n", sum);
-
 	return (0);
 }
 
