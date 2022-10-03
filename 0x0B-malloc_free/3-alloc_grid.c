@@ -1,42 +1,46 @@
-#include "main.h"
+#include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
  * alloc_grid - Entry point
- * @width: rows of matrix
- * @height: columns of string
+ *@width: rows of matrix
+ *@height: columns of string
  * Return: a pointer to a 2 dimensional array of integers or null
  */
 int **alloc_grid(int width, int height)
 {
-	int a, b, **net;
+	int **matrix;
+	int i;
+	int j;
+	int l;
+	int *p;
 
 	if (width <= 0 || height <= 0)
-	{
-		return ('\0');
-	}
-	net = malloc(sizeof(int *) * height);
-	if (net == NULL)
-	{
 		return (NULL);
-	}
-	for (a = 0 ; a < height ; a++)
+	matrix = (int **)malloc(height * sizeof(int *));
+	if (matrix == NULL)
+		return (NULL);
+	for (i = 0; i < height; i++)
 	{
-		net[a] = malloc(sizeof(int) * Width);
-		if (net[a] == NULL)
+		*(matrix + i) = (int *)malloc(width * sizeof(int));
+		if (*(matrix + i) == NULL)
 		{
-			for (a = a - 1; a >= 0; a--)
+			for (i = 0; i < height; i++)
 			{
-				free(net[a]);
+				p = matrix[i];
+				free(p);
 			}
-			free(net);
+			free(matrix);
 			return (NULL);
 		}
-		for (b = 0; b < width; b++)
+	}
+	for (l = 0; l < height; l++)
+	{
+		for (j = 0; j < width; j++)
 		{
-			net[a][b] = 0;
+			matrix[l][j] = 0;
 		}
 	}
-	return (net);
+	return (matrix);
 }
-
