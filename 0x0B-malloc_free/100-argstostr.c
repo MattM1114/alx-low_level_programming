@@ -27,7 +27,6 @@ char *argstostr(int ac, char **av)
 			ext++;
 		}
 	}
-
 	p = (char *)malloc(ext + ac + 1 * sizeof(char));
 	if (p == NULL)
 		return (NULL);
