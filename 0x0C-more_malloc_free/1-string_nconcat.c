@@ -1,13 +1,12 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * string_nconcat - len of 1st str, len of 2nd str, if n < 2nd, 2nd = n
- * 2nd + 1st = total len, malloc + null byte, loop to insert into temp arr
- * @s1: input 1
- * @s2: input 2
- * @n: s2's number of bytes
- * Return: 0
- */
+  * string_nconcat - ...
+  * @s1: ...
+  * @s2: ...
+  * @n: ...
+  * Return: ...
+  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int i = 0, j = 0, k = 0, l = 0;
@@ -32,9 +31,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	while (j < l)
 	{
 		if (j <= i)
-		{
 			str[j] = s1[j];
-		}
 		if (j >= i)
 		{
 			str[j] = s2[k];
