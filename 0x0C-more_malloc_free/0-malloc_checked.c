@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include "main,h"
+#include "main.h"
 /**
  * malloc_checked - Entry Point
  * @b: input amount
