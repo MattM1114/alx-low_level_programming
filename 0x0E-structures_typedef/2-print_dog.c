@@ -1,6 +1,6 @@
 #include "dog.h"
 #include <stdio.h>
-#include <stdlib>
+#include <stdlib.h>
 /**
  * print_dog -entry point
  * @d: Entry of struct
