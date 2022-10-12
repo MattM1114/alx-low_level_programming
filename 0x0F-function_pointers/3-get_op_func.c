@@ -16,6 +16,7 @@ int (*get_op_func(char *s))(int a, int b)
 		{"%", op_mod},
 		{NULL, NULL}
 	};
+
 	int i = 0;
 
 	while ((i < 5 && s != NULL) && (s[1] == '\0'))
@@ -26,3 +27,4 @@ int (*get_op_func(char *s))(int a, int b)
 	}
 	return (NULL);
 }
+
