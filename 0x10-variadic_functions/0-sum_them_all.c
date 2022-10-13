@@ -6,6 +6,7 @@
 *
 * Return: sum or 0
 */
+
 int sum_them_all(const unsigned int n, ...)
 {
 	unsigned int sum = 0, i;
