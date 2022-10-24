@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /*
- * pop-listint - deletes head node. Returns head node's data
+ * pop_listint - deletes head node. Returns head node's data
  * @head: pointer to a pointer to a struct
  *
  * Return: the head node's data (n)
