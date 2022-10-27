@@ -3,7 +3,6 @@
 /**
  * free_listint2 - frees a listint_t list
  * @head: a pointer to a pointer to a struct
- *
  */
 void free_listint2(listint_t **head)
 {
@@ -14,9 +13,10 @@ void free_listint2(listint_t **head)
 
 	while (*head != NULL)
 	{
-		TMP = (*head)->next;
+		tmp = (*head)->next;
 		free(*head);
 		*head = tmp;
 	}
 	*head = NULL;
 }
+
