@@ -8,9 +8,9 @@
 /**
  * struct hash_node_s - Node of a hash table
  * @key: The key, string
- * the key is unique in HashTable
- * @value: The value corresponding to the key
- * @next: A pointer to the next node of the list 
+ * The key is unique in the HashTable
+ * @value: The value corresponding to a key
+ * @next: A pointer to the next node of the List
  */
 typedef struct hash_node_s
 {
