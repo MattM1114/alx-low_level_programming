@@ -8,8 +8,7 @@
  *         Otherwise - a pointer to the new hash table
  */
 
-hash_table_t *hash_table_create(unsigned long int size)
-{
+hash_table_t *hash_table_create(unsigned long int size) {
 	hash_table_t *hash_table_created;
 	unsigned long int i;
 
@@ -27,7 +26,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 
 	for (i = 0; i < size; i++)
 	{
-		hash_table_created->array[i] = NULL;
+			hash_table_created->array[i] = NULL;
 	}
 
 	return (hash_table_created);
